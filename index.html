@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dowód Rzepakowy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="form-container">
+    <h1>Wprowadź dane Rzepakowe</h1>
+    <form id="rzepak-form">
+        <label>Imię:</label>
+        <input type="text" id="firstName" required>
+        <label>Nazwisko:</label>
+        <input type="text" id="lastName" required>
+        <label>Data urodzenia:</label>
+        <input type="date" id="birthDate" required>
+        <label>Numer Rzepakowy:</label>
+        <input type="text" id="rzepakNumber" required>
+        <label>Zdjęcie:</label>
+        <input type="file" id="photo" accept="image/*">
+        <button type="submit">Generuj Dowód</button>
+    </form>
+</div>
+
+<div id="id-card-container" style="display:none;">
+    <div id="id-card">
+        <div id="header">
+            <h2>RZECZPOSPOLITA RZEPAKOWA</h2>
+            <img src="rzepak-logo.png" alt="Logo Rzepaku" id="logo">
+        </div>
+        <div id="photo-container">
+            <img id="id-photo" src="" alt="Zdjęcie">
+        </div>
+        <div id="details">
+            <p><strong>Imię:</strong> <span id="id-firstName"></span></p>
+            <p><strong>Nazwisko:</strong> <span id="id-lastName"></span></p>
+            <p><strong>Data urodzenia:</strong> <span id="id-birthDate"></span></p>
+            <p><strong>Numer Rzepakowy:</strong> <span id="id-rzepakNumber"></span></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
